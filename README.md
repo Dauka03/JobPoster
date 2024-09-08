@@ -35,13 +35,17 @@ To run the application using Docker Compose, follow these steps:
 ## Running Without Docker
 Navigate to the server directory:
 ### Running the Backend (Server)
-cd /server
+   ```bash
+   cd /server
 Install the server dependencies:
-npm install
+   ```bash
+   npm install
 Start the server:
-npm start
+   ```bash
+   npm start
 
 ### Running the Frontend (Client)
-cd /client
-npm install
-npm run dev
+   ```bash
+   cd /client
+   npm install
+   npm run dev
