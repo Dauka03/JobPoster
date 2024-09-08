@@ -1,0 +1,45 @@
+# Node modules
+node_modules/
+client/node_modules/
+root/server/node_modules/
+
+# Build outputs
+root/client/build/
+root/server/dist/
+root/server/build/
+
+# Logs
+*.log
+logs/
+root/client/logs/
+root/server/logs/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs_analysis.dat
+*.njsproj
+*.sln
+
+# Dependency directories
+bower_components/
+
+# Temporary files
+tmp/
+temp/
+
+# NPM package-lock file (if you use Yarn, add yarn.lock instead)
+package-lock.json
+yarn.lock
