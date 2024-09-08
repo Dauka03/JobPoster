@@ -37,9 +37,11 @@ Navigate to the server directory:
 ### Running the Backend (Server)
    ```bash
    cd /server
+
 Install the server dependencies:
    ```bash
    npm install
+
 Start the server:
    ```bash
    npm start
