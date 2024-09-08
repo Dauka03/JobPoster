@@ -20,7 +20,30 @@ The Job Posting Platform is a web application that allows recruiters to create j
 - **Authentication**: Login and registration functionalities for users.
 
 ## Running the Application
+### Need setting database
+1. Install PostgreSQL
+Download and install PostgreSQL:
 
+Go to the official PostgreSQL website and choose the installer for your operating system (Windows, macOS, Linux).
+Follow the installation instructions:
+
+Make sure to select the options to install PostgreSQL Server and pgAdmin (a database management tool).
+2. Configure PostgreSQL
+Start PostgreSQL:
+
+Ensure that the PostgreSQL service is running. You can check this via pgAdmin or the command line.
+Create a database and user:
+
+Open pgAdmin or use the psql command line tool.
+Using pgAdmin:
+
+Open pgAdmin and log in.
+Create a new database:
+Right-click on "Databases" and select "Create" -> "Database...".
+Enter the database name (db) and click "Save".
+Create a new user:
+Right-click on "Login/Group Roles" and select "Create" -> "Login/Group Role...".
+Enter the username (postgres), set the password (123456789), and assign the necessary privileges.
 ### Using Docker Compose
 
 To run the application using Docker Compose, follow these steps:
