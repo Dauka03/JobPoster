@@ -2,12 +2,13 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { Button, Container, Pagination, Typography } from "@mui/material";
+import { Button, Container, Pagination } from "@mui/material";
 import { getJobs } from "../../services/jobService";
 import JobList from "@/components/JobList";
+import { Job } from "@/types";
 
 export default function JobListPage() {
-  const [allJobs, setAllJobs] = useState<any[]>([]);
+  const [allJobs, setAllJobs] = useState<Job[]>([]);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [jobsPerPage] = useState<number>(5); // Количество элементов на странице
 

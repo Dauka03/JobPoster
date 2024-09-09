@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import JobForm from "@/components/JobForm";
 import { createJob } from "../../services/jobService";
 import { Button, Container } from "@mui/material";
+import { Job } from "@/types";
 
 export default function CreateJobPage() {
   const router = useRouter();
@@ -20,7 +21,7 @@ export default function CreateJobPage() {
     }
   }, [router]);
 
-  const handleJobSubmit = async (job: any) => {
+  const handleJobSubmit = async (job: Job) => {
     if (token) {
       try {
         await createJob(job, token);

@@ -27,7 +27,7 @@ COPY --from=builder /app/package*.json ./
 RUN npm install --production
 
 # Копируем собранные файлы приложения
-COPY --from=builder /app/public ./public
+# COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
 
 # Устанавливаем порт

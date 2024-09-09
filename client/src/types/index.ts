@@ -1,5 +1,6 @@
 // src/types/index.ts
 export interface Job {
+    createdAt: string | number | Date;
     id: number;
     title: string;
     description: string;
